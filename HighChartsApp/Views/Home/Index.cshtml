@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+@section CustomScripts
+{
+<script type="text/javascript" src="@Url.Content("~/bower_components/highcharts/highstock.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/tfHighChart.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/app.js")"></script>
+}
+
+<section class="container">
+    <div class="row content" style="margin:20px;" >
+        <div class="col-md-3">
+            <select id="optChartTypes">
+                <option value="column">Column Chart</option>
+                <option value="pie">Pie Chart</option>
+                <option value="line">Line Chart</option>
+            </select>
+           <a href="#" id="btnShow" >Show</a>
+        </div>
+        <div class="col-md-9 content">
+           <div id="chartcontainer"></div>
+        </div>
+      
+    </div>
+</section>

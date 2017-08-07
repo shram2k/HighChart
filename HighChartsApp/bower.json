@@ -1,0 +1,10 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "jquery": "2.2.3",
+    "bootstrap": "*",
+    "highstock": "latest",
+    "highcharts": "4.2.4"
+  }
+}
